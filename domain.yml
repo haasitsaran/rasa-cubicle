@@ -1,0 +1,64 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_time
+  - ask_weather
+  - ask_location
+  - ask_address
+  - ask_benefits
+  - ask_company_description
+  - ask_company_values
+  - ask_email
+  - ask_hiring_process
+  - ask_phone_number
+
+responses:
+  utter_greet:
+    - text: "Hey! How can I help you today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_address:
+    - text: "This is a default response for ask address."
+  utter_benefits:
+    - text: "This is a default response for ask benefits."
+  utter_company_description:
+    - text: "This is a default response for ask company description."
+  utter_company_values:
+    - text: "This is a default response for ask company values."
+  utter_email:
+    - text: "This is a default response for ask email."
+  utter_hiring_process:
+    - text: "This is a default response for ask hiring process."
+  utter_phone_number:
+    - text: "This is a default response for ask phone number."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+actions:
+  - action_get_time
+  - action_get_weather
+  - action_get_location

@@ -1,0 +1,43 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Respond to ask address
+steps:
+- intent: ask_address
+- action: utter_ask_address
+- rule: Respond to ask benefits
+  steps:
+  - intent: ask_benefits
+  - action: utter_benefits
+- rule: Respond to ask company description
+  steps:
+  - intent: ask_company_description
+  - action: utter_company_description
+- rule: Respond to ask company values
+  steps:
+  - intent: ask_company_values
+  - action: utter_company_values
+- rule: Respond to ask email
+  steps:
+  - intent: ask_email
+  - action: utter_email
+- rule: Respond to ask hiring process
+  steps:
+  - intent: ask_hiring_process
+  - action: utter_hiring_process
+- rule: Respond to ask phone number
+  steps:
+  - intent: ask_phone_number
+  - action: utter_phone_number
+

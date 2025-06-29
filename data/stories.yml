@@ -1,0 +1,75 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: tell time
+  steps:
+    - intent: ask_time
+    - action: action_get_time
+
+- story: tell weather
+  steps:
+    - intent: ask_weather
+    - action: action_get_weather
+
+- story: tell location
+  steps:
+    - intent: ask_location
+    - action: action_get_location
+
+- story: Scenario for ask address
+  steps:
+  - intent: ask_address
+  - action: utter_ask_address
+- story: Scenario for ask benefits
+  steps:
+  - intent: ask_benefits
+  - action: utter_benefits
+- story: Scenario for ask company description
+  steps:
+  - intent: ask_company_description
+  - action: utter_company_description
+- story: Scenario for ask company values
+  steps:
+  - intent: ask_company_values
+  - action: utter_company_values
+- story: Scenario for ask email
+  steps:
+  - intent: ask_email
+  - action: utter_email
+- story: Scenario for ask hiring process
+  steps:
+  - intent: ask_hiring_process
+  - action: utter_hiring_process
+- story: Scenario for ask phone number
+  steps:
+  - intent: ask_phone_number
+  - action: utter_phone_number
+
