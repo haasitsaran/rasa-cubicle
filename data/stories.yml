@@ -44,32 +44,122 @@ stories:
     - intent: ask_location
     - action: action_get_location
 
-- story: Scenario for ask address
+- story: about company
   steps:
-  - intent: ask_address
-  - action: utter_ask_address
-- story: Scenario for ask benefits
-  steps:
-  - intent: ask_benefits
-  - action: utter_benefits
-- story: Scenario for ask company description
-  steps:
-  - intent: ask_company_description
-  - action: utter_company_description
-- story: Scenario for ask company values
-  steps:
-  - intent: ask_company_values
-  - action: utter_company_values
-- story: Scenario for ask email
-  steps:
-  - intent: ask_email
-  - action: utter_email
-- story: Scenario for ask hiring process
-  steps:
-  - intent: ask_hiring_process
-  - action: utter_hiring_process
-- story: Scenario for ask phone number
-  steps:
-  - intent: ask_phone_number
-  - action: utter_phone_number
+  - intent: about_company
+  - action: utter_about_company
 
+- story: main services
+  steps:
+  - intent: main_services
+  - action: utter_main_services
+
+- story: industries served
+  steps:
+  - intent: industries_served
+  - action: utter_industries_served
+
+- story: company age
+  steps:
+  - intent: company_age
+  - action: utter_company_age
+
+- story: headquarters location
+  steps:
+  - intent: headquarters_location
+  - action: utter_headquarters_location
+
+- story: leadership info
+  steps:
+  - intent: leadership_info
+  - action: utter_leadership_info
+
+- story: mission vision
+  steps:
+  - intent: mission_vision
+  - action: utter_mission_vision
+
+- story: company values
+  steps:
+  - intent: company_values
+  - action: utter_company_values
+
+- story: work culture
+  steps:
+  - intent: work_culture
+  - action: utter_work_culture
+
+- story: csr
+  steps:
+  - intent: csr
+  - action: utter_csr
+
+- story: diversity inclusion
+  steps:
+  - intent: diversity_inclusion
+  - action: utter_diversity_inclusion
+
+- story: growth status
+  steps:
+  - intent: growth_status
+  - action: utter_growth_status
+
+- story: news updates
+  steps:
+  - intent: news_updates
+  - action: utter_news_updates
+
+- story: future plans
+  steps:
+  - intent: future_plans
+  - action: utter_future_plans
+
+- story: job openings
+  steps:
+  - intent: job_openings
+  - action: utter_job_openings
+
+- story: application process
+  steps:
+  - intent: application_process
+  - action: utter_application_process
+
+- story: internships
+  steps:
+  - intent: internships
+  - action: utter_internships
+
+- story: employee experience
+  steps:
+  - intent: employee_experience
+  - action: utter_employee_experience
+
+- story: employee benefits
+  steps:
+  - intent: employee_benefits
+  - action: utter_employee_benefits
+
+- story: career growth
+  steps:
+  - intent: career_growth
+  - action: utter_career_growth
+
+- story: training opportunities
+  steps:
+  - intent: training_opportunities
+  - action: utter_training_opportunities
+
+- story: remote work policy
+  steps:
+  - intent: remote_work_policy
+  - action: utter_remote_work_policy
+
+- story: office locations
+  steps:
+  - intent: office_locations
+  - action: utter_office_locations
+
+- story: employee count
+  steps:
+  - intent: employee_count
+  - action: utter_employee_count

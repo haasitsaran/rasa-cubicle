@@ -16,6 +16,8 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - greetings
+    - what's up
 
 - intent: goodbye
   examples: |
@@ -29,6 +31,9 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - farewell
+    - talk to you soon
+    - I'm leaving
 
 - intent: affirm
   examples: |
@@ -38,6 +43,10 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - absolutely
+    - exactly
+    - you got it
+    - sure
 
 - intent: deny
   examples: |
@@ -48,6 +57,9 @@ nlu:
     - don't like that
     - no way
     - not really
+    - nope
+    - absolutely not
+    - by no means
 
 - intent: mood_great
   examples: |
@@ -65,6 +77,9 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+    - fantastic
+    - excellent
+    - couldn't be better
 
 - intent: mood_unhappy
   examples: |
@@ -82,6 +97,9 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+    - terrible
+    - feeling down
+    - awful
 
 - intent: bot_challenge
   examples: |
@@ -89,29 +107,332 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - are you an AI?
+    - what are you?
+    - you're a robot, right?
+    - tell me if you're a bot
+    - just confirm, are you a bot?
 
 - intent: ask_time
   examples: |
     - what time is it
     - tell me the current time
     - can you give me the time
+    - what's the time now?
+    - could you tell me what time it is?
+    - current time please
+    - time now?
+    - what's the time?
+    - is it late?
 
 - intent: ask_weather
   examples: |
     - what's the weather like
     - how's the weather today
     - will it rain today
+    - what's the forecast?
+    - is it sunny out?
+    - any rain expected?
+    - what's the temperature?
+    - how's the weather looking?
+    - is it going to be cold?
 
 - intent: ask_location
   examples: |
     - where am I
     - what's my current location
     - tell me where I am
+    - can you pinpoint my location?
+    - locate me
+    - what are my coordinates?
+    - where exactly am I right now?
+    - can you tell me my position?
+    - what's my geographical location?
 
-- intent: ask_email
-examples: |
-  - What's your email address?
-  - Can I get your company email?
-  - Email address please.
+- intent: about_company
+  examples: |
+    - What does this company do?
+    - Tell me about the company
+    - What’s this company into?
+    - Can you describe the business?
+    - What is the company's focus?
+    - Give me an overview of this organization.
+    - What kind of work do they do?
+    - What's their main business?
+    - Explain what this company is about.
 
-  
+- intent: main_services
+  examples: |
+    - What services do they offer?
+    - List the main products
+    - What are the key offerings?
+    - Can you detail their services?
+    - What do they primarily sell or provide?
+    - What kind of solutions do they have?
+    - Tell me about their core services.
+    - What are their main products or services?
+    - What solutions does the company offer?
+
+- intent: industries_served
+  examples: |
+    - What industries do they work with?
+    - Do they serve ecommerce?
+    - Who are their clients?
+    - Which sectors do they operate in?
+    - What types of businesses do they help?
+    - Are they involved in healthcare?
+    - Do they have clients in finance?
+    - What markets do they serve?
+    - What industries are their customers from?
+
+- intent: company_age
+  examples: |
+    - How old is this company?
+    - When was it founded?
+    - Are they new?
+    - What year was the company established?
+    - How many years has this business been running?
+    - When did they start operations?
+    - Is this a new or established company?
+    - What's their founding date?
+    - How long have they been in business?
+
+- intent: headquarters_location
+  examples: |
+    - Where is the company based?
+    - Which city are they in?
+    - What is their main office location?
+    - Where are they headquartered?
+    - What's the company's primary address?
+    - In what city is their main branch?
+    - Can you tell me their HQ location?
+    - Where is their central office?
+    - What's the company's home base?
+
+- intent: leadership_info
+  examples: |
+    - Who are the founders?
+    - Who's the CEO?
+    - Tell me the leadership team
+    - Who runs the company?
+    - What are the key executives?
+    - Who is on the board of directors?
+    - Can you name the company's leaders?
+    - Who founded this organization?
+    - Tell me about the management team.
+
+- intent: mission_vision
+  examples: |
+    - What’s their mission?
+    - Do they have a vision statement?
+    - What is the company's mission?
+    - What's their vision for the future?
+    - Do they have a stated purpose?
+    - What drives this company?
+    - What's the core aim of the business?
+    - Tell me about their company philosophy.
+    - What's their guiding principle?
+
+- intent: company_values
+  examples: |
+    - What values do they follow?
+    - Company values?
+    - What are their core values?
+    - What principles guide this company?
+    - What's important to their business culture?
+    - How do they define their values?
+    - What beliefs does the company uphold?
+    - Tell me about their ethical standards.
+    - What are the company's guiding values?
+
+- intent: work_culture
+  examples: |
+    - What's the work culture like?
+    - Is it a good place to work?
+    - Describe the company culture.
+    - What's the atmosphere in the office?
+    - How is the work environment?
+    - What's it like to be an employee there?
+    - Do they have a positive work environment?
+    - How would you describe the workplace?
+    - Is it a supportive work culture?
+
+- intent: csr
+  examples: |
+    - Do they do CSR?
+    - Are they socially responsible?
+    - What are their corporate social responsibility efforts?
+    - Do they engage in community initiatives?
+    - How active are they in CSR?
+    - Are they involved in sustainability?
+    - What's their stance on social responsibility?
+    - Do they give back to the community?
+    - Tell me about their CSR programs.
+
+- intent: diversity_inclusion
+  examples: |
+    - Is the company diverse?
+    - Do they support inclusion?
+    - What are their diversity and inclusion initiatives?
+    - Do they promote a diverse workforce?
+    - How inclusive is their environment?
+    - Are they committed to D&I?
+    - What efforts do they make for diversity?
+    - Is the company welcoming to all backgrounds?
+    - Tell me about their inclusion policies.
+
+- intent: growth_status
+  examples: |
+    - Are they growing?
+    - Is it a growing company?
+    - What's their growth trajectory?
+    - Has the company expanded recently?
+    - What are their growth indicators?
+    - Are they in a phase of expansion?
+    - Is the company stable or growing?
+    - How has their growth been?
+    - What's their growth outlook?
+
+- intent: news_updates
+  examples: |
+    - Have they been in the news?
+    - Recent achievements?
+    - Any recent company news?
+    - What's new with the company?
+    - Have they received any recent press?
+    - What are their latest accomplishments?
+    - Any recent announcements?
+    - Have there been any big headlines about them?
+    - What's the latest company update?
+
+- intent: future_plans
+  examples: |
+    - What are their goals?
+    - What’s next for them?
+    - What are the company's future plans?
+    - What's their long-term strategy?
+    - What are their upcoming objectives?
+    - Where is the company headed?
+    - What's on their roadmap?
+    - What are their future aspirations?
+    - What's their vision for tomorrow?
+
+- intent: job_openings
+  examples: |
+    - Any current openings?
+    - Are they hiring?
+    - Do they have job vacancies?
+    - Are there any positions available?
+    - What jobs can I apply for?
+    - Is the company recruiting?
+    - List their current job openings.
+    - Where can I find their job listings?
+    - Are there any career opportunities?
+
+- intent: application_process
+  examples: |
+    - How do I apply?
+    - What’s the hiring process?
+    - What are the steps to apply for a job?
+    - How do I submit my application?
+    - Can you explain their recruitment process?
+    - What's the procedure for getting hired?
+    - How long does the application process take?
+    - What's involved in their hiring stages?
+    - What should I expect when applying?
+
+- intent: internships
+  examples: |
+    - Do they offer internships?
+    - Any training programs?
+    - Are there internship opportunities?
+    - Do they have student programs?
+    - Can I get an internship here?
+    - What kind of training do they provide?
+    - Are there any intern positions?
+    - Tell me about their training initiatives.
+    - Do they have programs for new graduates?
+
+- intent: employee_experience
+  examples: |
+    - Is it good to work there?
+    - What do employees say?
+    - How is the employee experience?
+    - What's the feedback from current employees?
+    - Is it a positive place for employees?
+    - How do employees feel about working here?
+    - What are employee reviews like?
+    - Is employee satisfaction high?
+    - What's the general sentiment of staff?
+
+- intent: employee_benefits
+  examples: |
+    - What are the benefits?
+    - Do they give perks?
+    - What kind of employee benefits do they offer?
+    - Are there good perks for employees?
+    - What's included in their compensation package?
+    - Do they have health insurance?
+    - What are the advantages of working there?
+    - Tell me about their employee perks.
+    - What benefits do employees receive?
+
+- intent: career_growth
+  examples: |
+    - Is there growth?
+    - Do they promote internally?
+    - What are the career growth opportunities?
+    - Can employees advance their careers?
+    - Is there a path for promotion?
+    - Do they support internal career progression?
+    - How do employees grow within the company?
+    - What's the career development like?
+    - Are there opportunities for advancement?
+
+- intent: training_opportunities
+  examples: |
+    - Do they train employees?
+    - Learning options?
+    - What training opportunities are available?
+    - Do they offer professional development?
+    - Can employees learn new skills?
+    - What kind of learning programs do they have?
+    - Is there support for continuous learning?
+    - Do they invest in employee training?
+    - Tell me about their educational resources.
+
+- intent: remote_work_policy
+  examples: |
+    - Is it remote?
+    - Do they support WFH?
+    - What's their remote work policy?
+    - Can I work from home?
+    - Do they offer remote positions?
+    - Is hybrid work an option?
+    - What's their stance on working remotely?
+    - Do they allow flexible work arrangements?
+    - Is working from home possible?
+
+- intent: office_locations
+  examples: |
+    - Where are the offices?
+    - Do they have multiple branches?
+    - What are their office locations?
+    - Do they have offices outside of Bengaluru?
+    - Where are their different branches?
+    - List all their office addresses.
+    - Do they have offices internationally?
+    - What's their global presence for offices?
+    - Where can I find their physical locations?
+
+- intent: employee_count
+  examples: |
+    - How big is the team?
+    - How many employees?
+    - What's the company's headcount?
+    - How many people work there?
+    - What's their total employee number?
+    - Is it a large or small company by staff size?
+    - Approximately how many employees do they have?
+    - What's the size of their workforce?
+    - How many staff members are there?

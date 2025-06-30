@@ -11,13 +11,30 @@ intents:
   - ask_time
   - ask_weather
   - ask_location
-  - ask_address
-  - ask_benefits
-  - ask_company_description
-  - ask_company_values
-  - ask_email
-  - ask_hiring_process
-  - ask_phone_number
+  - about_company
+  - main_services
+  - industries_served
+  - company_age
+  - headquarters_location
+  - leadership_info
+  - mission_vision
+  - company_values
+  - work_culture
+  - csr
+  - diversity_inclusion
+  - growth_status
+  - news_updates
+  - future_plans
+  - job_openings
+  - application_process
+  - internships
+  - employee_experience
+  - employee_benefits
+  - career_growth
+  - training_opportunities
+  - remote_work_policy
+  - office_locations
+  - employee_count
 
 responses:
   utter_greet:
@@ -38,25 +55,58 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-  utter_ask_address:
-    - text: "This is a default response for ask address."
-  utter_benefits:
-    - text: "This is a default response for ask benefits."
-  utter_company_description:
-    - text: "This is a default response for ask company description."
+  utter_about_company:
+    - text: "WeframeTech specializes in headless commerce development, JAMstack site builds, and custom web/mobile apps and helps clients in D2C retail, e-commerce, B2B SaaS, and digital agencies using modern technologies."
+  utter_main_services:
+    - text: "Their main services include Medusa.js and Directus CMS integration, Shopify Plus migrations, and Next.js-based front-end development, especially for D2C brands and enterprises seeking scalable, modern digital commerce platforms."
+  utter_industries_served:
+    - text: "They work with industries like D2C retail, e-commerce, B2B SaaS, and digital agencies."
+  utter_company_age:
+    - text: "WeframeTech was founded in 2020, making it 5 years old."
+  utter_headquarters_location:
+    - text: "The company is headquartered in Bengaluru, Karnataka, India."
+  utter_leadership_info:
+    - text: "Key people include Vipul Uthaiah (Founder & CSO), Sambit Majhi (CTO)."
+  utter_mission_vision:
+    - text: "Their mission is to help D2C founders move away from traditional Shopify and embrace scalable, automated headless commerce solutions."
   utter_company_values:
-    - text: "This is a default response for ask company values."
-  utter_email:
-    - text: "This is a default response for ask email."
-  utter_hiring_process:
-    - text: "This is a default response for ask hiring process."
-  utter_phone_number:
-    - text: "This is a default response for ask phone number."
+    - text: "WeframeTech values innovation, scalability, collaboration, and customer success, which define its company culture."
+  utter_work_culture:
+    - text: "The culture is described as startup-like, cross-functional, and fast-paced, encouraging small teams, high ownership, and close client collaboration."
+  utter_csr:
+    - text: "WeframeTech not publicly stated in corporate social responsibility."
+  utter_diversity_inclusion:
+    - text: "The company not publicly stated in diversity and inclusion initiatives."
+  utter_growth_status:
+    - text: "WeframeTech has shown growth through 200+ completed projects and partnerships in North America, Europe, UAE, and Australia."
+  utter_news_updates:
+    - text: "Recently, they were mentioned for recent posts highlight Strapi vs Directus guide and major site redesigns for Zoho and B2B brands."
+  utter_future_plans:
+    - text: "Their roadmap includes expand global presence, deepen headless commerce expertise, and grow enterprise client base."
+  utter_job_openings:
+    - text: "They are hiring for roles like full-stack headless commerce developers, CMS specialists, UI/UX designers."
+  utter_application_process:
+    - text: "The hiring process typically involves online resume review, technical assessment, 2–3 rounds of technical & culture interviews."
+  utter_internships:
+    - text: "WeframeTech offers internship programs such as internships occasionally posted; no formal program publicly listed."
+  utter_employee_experience:
+    - text: "Employees describe the environment as innovative, customer-focused, and quality-driven (based on project showcase tone)."
+  utter_employee_benefits:
+    - text: "Perks include flexible work, professional up-skilling, mentorship by experienced founders."
+  utter_career_growth:
+    - text: "Employees typically grow through developers grow into CMS specialists, project leads, or full-stack roles."
+  utter_training_opportunities:
+    - text: "They offer training in headless CMS (Directus, Strapi), Medusa.js, JAMstack frameworks like Next.js."
+  utter_remote_work_policy:
+    - text: "The company supports likely hybrid/remote-friendly (not explicitly stated)."
+  utter_office_locations:
+    - text: "Offices are located in Bengaluru, India (primary); global client coverage in USA, Canada, UAE, UK, Australia."
+  utter_employee_count:
+    - text: "The company employs around 11–50 people."
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-
 
 actions:
   - action_get_time

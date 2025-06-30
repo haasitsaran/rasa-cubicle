@@ -12,32 +12,137 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: Respond to ask address
-steps:
-- intent: ask_address
-- action: utter_ask_address
-- rule: Respond to ask benefits
+- rule: Respond to ask time
   steps:
-  - intent: ask_benefits
-  - action: utter_benefits
-- rule: Respond to ask company description
-  steps:
-  - intent: ask_company_description
-  - action: utter_company_description
-- rule: Respond to ask company values
-  steps:
-  - intent: ask_company_values
-  - action: utter_company_values
-- rule: Respond to ask email
-  steps:
-  - intent: ask_email
-  - action: utter_email
-- rule: Respond to ask hiring process
-  steps:
-  - intent: ask_hiring_process
-  - action: utter_hiring_process
-- rule: Respond to ask phone number
-  steps:
-  - intent: ask_phone_number
-  - action: utter_phone_number
+  - intent: ask_time
+  - action: action_get_time
 
+- rule: Respond to ask weather
+  steps:
+  - intent: ask_weather
+  - action: action_get_weather
+
+- rule: Respond to ask location
+  steps:
+  - intent: ask_location
+  - action: action_get_location
+
+- rule: Respond to about_company
+  steps:
+  - intent: about_company
+  - action: utter_about_company
+
+- rule: Respond to main_services
+  steps:
+  - intent: main_services
+  - action: utter_main_services
+
+- rule: Respond to industries_served
+  steps:
+  - intent: industries_served
+  - action: utter_industries_served
+
+- rule: Respond to company_age
+  steps:
+  - intent: company_age
+  - action: utter_company_age
+
+- rule: Respond to headquarters_location
+  steps:
+  - intent: headquarters_location
+  - action: utter_headquarters_location
+
+- rule: Respond to leadership_info
+  steps:
+  - intent: leadership_info
+  - action: utter_leadership_info
+
+- rule: Respond to mission_vision
+  steps:
+  - intent: mission_vision
+  - action: utter_mission_vision
+
+- rule: Respond to company_values
+  steps:
+  - intent: company_values
+  - action: utter_company_values
+
+- rule: Respond to work_culture
+  steps:
+  - intent: work_culture
+  - action: utter_work_culture
+
+- rule: Respond to csr
+  steps:
+  - intent: csr
+  - action: utter_csr
+
+- rule: Respond to diversity_inclusion
+  steps:
+  - intent: diversity_inclusion
+  - action: utter_diversity_inclusion
+
+- rule: Respond to growth_status
+  steps:
+  - intent: growth_status
+  - action: utter_growth_status
+
+- rule: Respond to news_updates
+  steps:
+  - intent: news_updates
+  - action: utter_news_updates
+
+- rule: Respond to future_plans
+  steps:
+  - intent: future_plans
+  - action: utter_future_plans
+
+- rule: Respond to job_openings
+  steps:
+  - intent: job_openings
+  - action: utter_job_openings
+
+- rule: Respond to application_process
+  steps:
+  - intent: application_process
+  - action: utter_application_process
+
+- rule: Respond to internships
+  steps:
+  - intent: internships
+  - action: utter_internships
+
+- rule: Respond to employee_experience
+  steps:
+  - intent: employee_experience
+  - action: utter_employee_experience
+
+- rule: Respond to employee_benefits
+  steps:
+  - intent: employee_benefits
+  - action: utter_employee_benefits
+
+- rule: Respond to career_growth
+  steps:
+  - intent: career_growth
+  - action: utter_career_growth
+
+- rule: Respond to training_opportunities
+  steps:
+  - intent: training_opportunities
+  - action: utter_training_opportunities
+
+- rule: Respond to remote_work_policy
+  steps:
+  - intent: remote_work_policy
+  - action: utter_remote_work_policy
+
+- rule: Respond to office_locations
+  steps:
+  - intent: office_locations
+  - action: utter_office_locations
+
+- rule: Respond to employee_count
+  steps:
+  - intent: employee_count
+  - action: utter_employee_count
