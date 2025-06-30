@@ -24,12 +24,12 @@ rasa train --verbose
 to run the actions use
 
 rasa run actions --port 5055
-rasa run -m models --enable-api --cors "*" --debug --endpoints endpoints.yml
+ rasa run -m models --enable-api --cors "*" --debug --endpoints endpoints.yml
 
 this to mainly run the rasa
 
- rasa run --enable-api --cors "*"
-rasa run actions --cors "*" --debug
+rasa run --enable-api --cors "*"
+rasa run actions --cors "*" --debug --port 5055
 
 use this to clean the previously trained data
 
